@@ -1,0 +1,55 @@
+:root {
+    --bg: rgb(21, 27, 32);
+    --fgText: rgb(220, 220, 220);
+}
+
+html {
+    background-color: var(--bg);
+    color: var(--fgText);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+    font-size: 14px;
+    padding: 0 26px;
+    line-height: 22px;
+}
+
+code {
+    font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+    font-size: 14px;
+    line-height: 19px;
+}
+
+h1 {
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    /* line-height: 1.2; */
+    /* border-bottom-width: 1px; */
+    /* border-bottom-style: solid; */
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+nav a {
+    font-size: 1.5em;
+    color: var(--fgText);
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    padding: 10px;
+}
