@@ -1,11 +1,24 @@
 :root {
-    --bg: rgb(21, 27, 32);
-    --fgText: rgb(220, 220, 220);
+    --color_bg0: rgb(21, 27, 32);
+    --color_bg1: rgb(21, 27, 32);
+    --color_bg2: rgb(21, 27, 32);
+    --color_bg3: rgb(21, 27, 32);
+    --color_fgText: rgb(220, 220, 220);
+    --color_red: rgb(255, 73, 15);
+    --color_orange: rgb(255, 133, 18);
+    --color_yellow: rgb(230, 203, 86);
+    --color_green: rgb(168, 203, 68);
+    --color_blue: rgb(105, 167, 245);
+    --color_teal: rgb(93, 223, 255);
+    --color_pink: rgb(255, 147, 255);
+    --color_alt0: rgb(92, 82, 66);
+    --color_alt1: rgb(194, 182, 164);
+    --color_alt2: rgb(237, 227, 207);
 }
 
 html {
-    background-color: var(--bg);
-    color: var(--fgText);
+    background-color: var(--color_bg0);
+    color: var(--color_fgText);
 }
 
 body {
@@ -40,7 +53,7 @@ img {
 
 nav a {
     font-size: 1.5em;
-    color: var(--fgText);
+    color: var(--color_fgText);
     text-decoration: none;
 }
 
