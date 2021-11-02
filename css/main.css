@@ -73,15 +73,14 @@ img {
     max-height: 100%;
 }
 
-nav {
+nav.edgeRight {
     position: absolute;
+    margin: unset;
+    padding: unset;
+    right: 0;
     top: 1em;
-    right: 11.5em;
-    margin-left: auto;
-}
-
-nav ul.edgeRight {
-    padding-left: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
     background-color: var(--color_alt1);
 }
 
