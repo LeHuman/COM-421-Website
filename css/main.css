@@ -105,11 +105,13 @@ img {
     /* border-color: var(--color_mc0);
     border-bottom-style: solid; */
     transition: .3s ease-in-out;
+    transition-property: background-color;
 }
 
 #title:hover {
     background-color: var(--color_red);
     transition: .3s ease-in-out;
+    transition-property: background-color;
 }
 
 #subtitle {
@@ -117,11 +119,13 @@ img {
     padding: 0.6em 0.8em 0.7em 0.8em;
     background-color: var(--tcolor_mc1);
     transition: .3s ease-in-out;
+    transition-property: background-color;
 }
 
 #subtitle:hover {
     background-color: var(--color_mc1);
     transition: .3s ease-in-out;
+    transition-property: background-color;
 }
 
 /* Navigation Bar */
@@ -149,11 +153,13 @@ nav ul li a {
     text-decoration: none;
     border-radius: 8px;
     transition: .3s ease-in-out;
+    transition-property: background-color;
 }
 
 nav ul li a:hover {
     background-color: var(--tcolor_alt2);
     transition: .3s ease-in-out;
+    transition-property: background-color;
 }
 
 #currentNav {
@@ -180,12 +186,14 @@ nav ul li a:hover {
     margin: -2px;
     opacity: 1;
     transition: 0.3s ease-in-out;
+    transition-property: "margin, opacity";
 }
 
 body:hover #headerSpace::before {
     margin: 0;
     opacity: 0;
     transition: .3s ease-in-out;
+    transition-property: "margin, opacity";
 }
 
 #headerSpace {
