@@ -1,4 +1,5 @@
 :root {
+    /* Color Palette */
     --color_mc0: rgb(1, 8, 12);
     --color_mc1: rgb(21, 27, 32);
     --color_mc2: rgb(99, 99, 99);
@@ -14,6 +15,22 @@
     --color_blue: rgb(105, 167, 245);
     --color_teal: rgb(93, 223, 255);
     --color_pink: rgb(255, 147, 255);
+    /* Transparent Palette Variants */
+    --tcolor_mc0: rgb(1, 8, 12, 0.9);
+    --tcolor_mc1: rgb(21, 27, 32, 0.9);
+    --tcolor_mc2: rgb(99, 99, 99, 0.9);
+    --tcolor_mc3: rgb(146, 146, 146, 0.9);
+    --tcolor_mc4: rgb(220, 220, 220, 0.9);
+    --tcolor_alt0: rgb(92, 82, 66, 0.9);
+    --tcolor_alt1: rgb(194, 182, 164, 0.9);
+    --tcolor_alt2: rgb(237, 227, 207, 0.9);
+    --tcolor_red: rgb(195, 47, 0, 0.9);
+    --tcolor_orange: rgb(255, 133, 18, 0.9);
+    --tcolor_yellow: rgb(230, 203, 86, 0.9);
+    --tcolor_green: rgb(168, 203, 68, 0.9);
+    --tcolor_blue: rgb(105, 167, 245, 0.9);
+    --tcolor_teal: rgb(93, 223, 255, 0.9);
+    --tcolor_pink: rgb(255, 147, 255, 0.9);
 }
 
 html {
@@ -60,18 +77,46 @@ h2, h3 {
     border-radius: 32px 0px 0px 32px;
 }
 
-h1 {
-    color: var(--color_mc4);
-    font-weight: bold;
-    background-color: var(--color_red);
-    /* border-color: var(--color_mc0);
-    border-bottom-style: solid; */
-}
-
 img {
     max-width: 100%;
     max-height: 100%;
 }
+
+/* Top Page Titles */
+
+#title {
+    color: var(--color_mc4);
+    font-weight: bold;
+    background-color: var(--tcolor_red);
+    /* border-color: var(--color_mc0);
+    border-bottom-style: solid; */
+}
+
+#subtitle {
+    border-radius: 32px;
+    padding: 15px 20px 17px 20px;
+    background-color: var(--tcolor_mc1);
+}
+
+/* .blur {
+    position: relative;
+    overflow: hidden;
+}
+
+.blur:before {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 1080px var(--tcolor_mc0);
+    filter: blur(16px);
+    margin: -16px;
+} */
+
+/* Navigation Bar */
 
 nav.edgeRight {
     position: absolute;
@@ -97,24 +142,39 @@ nav ul li a {
     border-radius: 8px;
 }
 
-nav ul li a#currentNav {
+#currentNav {
     background-color: var(--color_alt2);
 }
 
-header div#headerSpace img {
-    transform: translateY(-25%);
-    min-width: 100%;
-}
+/* Header Background */
 
-header div#headerSpace {
+#headerSpace {
     background-color: var(--color_mc0);
-    filter: brightness(0.7) contrast(0.9);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.8) contrast(0.9);
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    z-index: -1;
+    z-index: -10;
     min-height: 24em;
     max-height: 24em;
-    overflow: hidden;
+}
+
+#home #headerSpace {
+    background-image: url("https://images.freeimages.com/images/large-previews/813/tractor-3-1386656.jpg");
+}
+
+#contact #headerSpace {
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b6e2b5b6-1304-4cd2-a7e1-4df01f81c80b/d1dn53z-a9151588-e8cd-4ae5-a0e1-1418e8aca9b0.jpg/v1/fill/w_1024,h_768,q_75,strp/stock_image_17___family_hug_by_vertasual.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sIm9iaiI6W1t7InBhdGgiOiIvZi9iNmUyYjViNi0xMzA0LTRjZDItYTdlMS00ZGYwMWY4MWM4MGIvZDFkbjUzei1hOTE1MTU4OC1lOGNkLTRhZTUtYTBlMS0xNDE4ZThhY2E5YjAuanBnIiwid2lkdGgiOiI8PTEwMjQiLCJoZWlnaHQiOiI8PTc2OCJ9XV19.zR7rQtdPUg8PR1exBy6HPMLxeOUk5eSXZMdVa0dhi2o");
+}
+
+#projects #headerSpace {
+    background-image: url("https://i.stack.imgur.com/FNT9b.gif");
+}
+
+#resume #headerSpace {
+    background-image: url("https://lh6.ggpht.com/-wtv7FBpPIj4/VP8MMX6l6QI/AAAAAAAArZI/bX0C06L2knA/stock-photos-for-free%25255B4%25255D.jpg?imgmax=800");
 }
