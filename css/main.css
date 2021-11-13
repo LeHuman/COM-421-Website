@@ -21,9 +21,9 @@
     --tcolor_mc2: rgb(99, 99, 99, 0.9);
     --tcolor_mc3: rgb(146, 146, 146, 0.9);
     --tcolor_mc4: rgb(220, 220, 220, 0.9);
-    --tcolor_alt0: rgb(92, 82, 66, 0.9);
-    --tcolor_alt1: rgb(194, 182, 164, 0.9);
-    --tcolor_alt2: rgb(237, 227, 207, 0.9);
+    --tcolor_alt0: rgb(92, 82, 66, 0.5);
+    --tcolor_alt1: rgb(194, 182, 164, 0.5);
+    --tcolor_alt2: rgb(237, 227, 207, 0.5);
     --tcolor_red: rgb(195, 47, 0, 0.9);
     --tcolor_orange: rgb(255, 133, 18, 0.9);
     --tcolor_yellow: rgb(230, 203, 86, 0.9);
@@ -39,6 +39,7 @@ html {
 }
 
 body {
+    overflow: hidden;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
     font-size: 0.9em;
     padding: 16px 128px;
@@ -57,6 +58,13 @@ h2, h3 {
     font-weight: normal;
     padding: 0 0.8em 0 0.8em;
 }
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Side Pop Outs */
 
 .edgeLeft {
     padding: 0.8em;
@@ -77,9 +85,14 @@ h2, h3 {
     border-radius: 32px 0px 0px 32px;
 }
 
-img {
-    max-width: 100%;
-    max-height: 100%;
+/* Main Content */
+
+#content {
+    margin: auto;
+    margin-top: 8em;
+    max-width: 960px;
+    min-width: 50%;
+    font-size: 1.2em;
 }
 
 /* Top Page Titles */
@@ -90,31 +103,25 @@ img {
     background-color: var(--tcolor_red);
     /* border-color: var(--color_mc0);
     border-bottom-style: solid; */
+    transition: .3s ease-in-out;
+}
+
+#title:hover {
+    background-color: var(--color_red);
+    transition: .3s ease-in-out;
 }
 
 #subtitle {
     border-radius: 32px;
-    padding: 15px 20px 17px 20px;
+    padding: 0.6em 0.8em 0.7em 0.8em;
     background-color: var(--tcolor_mc1);
+    transition: .3s ease-in-out;
 }
 
-/* .blur {
-    position: relative;
-    overflow: hidden;
+#subtitle:hover {
+    background-color: var(--color_mc1);
+    transition: .3s ease-in-out;
 }
-
-.blur:before {
-    content: "";
-    position: absolute;
-    z-index: -2;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    box-shadow: inset 0 0 1080px var(--tcolor_mc0);
-    filter: blur(16px);
-    margin: -16px;
-} */
 
 /* Navigation Bar */
 
@@ -140,6 +147,12 @@ nav ul li a {
     color: var(--color_mc1);
     text-decoration: none;
     border-radius: 8px;
+    transition: .3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: var(--tcolor_alt2);
+    transition: .3s ease-in-out;
 }
 
 #currentNav {
@@ -149,11 +162,36 @@ nav ul li a {
 /* Header Background */
 
 #headerSpace {
+    position: relative;
+    overflow: hidden;
+}
+
+#headerSpace::before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px var(--tcolor_mc1);
+    filter: blur(2px);
+    margin: -2px;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+}
+
+body:hover #headerSpace::before {
+    margin: 0;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+
+#headerSpace {
     background-color: var(--color_mc0);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: brightness(0.8) contrast(0.9);
     position: absolute;
     top: 0;
     left: 0;
@@ -161,6 +199,7 @@ nav ul li a {
     z-index: -10;
     min-height: 24em;
     max-height: 24em;
+    overflow: hidden;
 }
 
 #home #headerSpace {
