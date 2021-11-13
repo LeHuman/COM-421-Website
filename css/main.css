@@ -91,7 +91,8 @@ img {
     margin: auto;
     margin-top: 8em;
     max-width: 960px;
-    min-width: 50%;
+    min-width: 240px;
+    /* min-width: 50%; */
     font-size: 1.2em;
 }
 
