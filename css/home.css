@@ -1,9 +1,10 @@
-/* #content p {
-} */
-
 #content img {
     margin: 0 32px;
     float: right;
     max-width: 240px;
     border-radius: 4px;
+}
+
+#headerSpace {
+    background-image: url("https://images.freeimages.com/images/large-previews/813/tractor-3-1386656.jpg");
 }
