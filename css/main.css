@@ -88,7 +88,7 @@ img {
     border-radius: 0px 32px 32px 0px;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, var(--color_alt1) 20%);
     transition: 2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    transition-property: "padding-left, margin-left";
+    transition-property: padding-left, margin-left;
     transition-delay: 0.05s;
 }
 
@@ -103,7 +103,7 @@ img {
     border-radius: 32px 0px 0px 32px;
     background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, var(--color_alt1) 20%);
     transition: 2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    transition-property: "padding-right, margin-right";
+    transition-property: padding-right, margin-right;
     transition-delay: 0.05s;
 }
 
@@ -111,7 +111,7 @@ img {
     padding-left: 50em;
     margin-left: -50em;
     transition: .3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    transition-property: "padding-left, margin-left";
+    transition-property: padding-left, margin-left;
     transition-delay: 0.05s;
 }
 
@@ -119,7 +119,7 @@ img {
     padding-right: 50em;
     margin-right: -50em;
     transition: .3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    transition-property: "padding-right, margin-right";
+    transition-property: padding-right, margin-right;
     transition-delay: 0.05s;
 }
 
@@ -192,6 +192,7 @@ nav.edgeRight {
     padding-left: 5%;
     padding-right: 5%;
     background-color: var(--color_alt1);
+    transition-property: none;
 }
 
 nav ul li {
@@ -239,7 +240,7 @@ nav ul li a:hover {
     margin: -5px;
     opacity: 1;
     transition: 0.3s ease-in-out;
-    transition-property: "margin, opacity";
+    transition-property: margin, opacity;
     transition-delay: 0.1s;
 }
 
@@ -247,7 +248,7 @@ body:hover #headerSpace::before {
     margin: 0;
     opacity: 0;
     transition: .3s ease-in-out;
-    transition-property: "margin, opacity";
+    transition-property: margin, opacity;
     transition-delay: 0.1s;
 }
 

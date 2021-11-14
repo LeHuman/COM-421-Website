@@ -1,3 +1,5 @@
+/* Background colors */
+
 #content h3 {
     color: var(--color_mc1);
 }
@@ -38,6 +40,8 @@
     background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, var(--color_green) 20%);
 }
 
+/* Lists */
+
 p {
     margin-left: 0.6em;
 }
@@ -66,6 +70,8 @@ ol li~li::before {
     content: ', ';
 }
 
+/* Alignment */
+
 .rightAlign {
     float: right;
 }
@@ -73,6 +79,8 @@ ol li~li::before {
 .leftAlign {
     float: left;
 }
+
+/* Header */
 
 #headerSpace {
     background-image: url("https://lh6.ggpht.com/-wtv7FBpPIj4/VP8MMX6l6QI/AAAAAAAArZI/bX0C06L2knA/stock-photos-for-free%25255B4%25255D.jpg?imgmax=800");
