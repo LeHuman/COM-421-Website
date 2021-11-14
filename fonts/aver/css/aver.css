@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "Aver";
+    src: local("Aver"), /* Find Locally */
+    url('../Aver.ttf') format('embedded-opentype'), /* Internet Explorer */
+    url('../Aver.ttf') format('woff2'), /* Super Modern Browsers */
+    url('../Aver.ttf') format('woff'), /* Pretty Modern Browsers */
+    url('../Aver.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../Aver.ttf') format('svg'), /* Legacy iOS */
+    url('../Aver.ttf') format('eot');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Aver";
+    src: local("Aver\ Bold"), /* Find Locally */
+    url('../Aver\ Bold.ttf') format('embedded-opentype'), /* Internet Explorer */
+    url('../Aver\ Bold.ttf') format('woff2'), /* Super Modern Browsers */
+    url('../Aver\ Bold.ttf') format('woff'), /* Pretty Modern Browsers */
+    url('../Aver\ Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../Aver\ Bold.ttf') format('svg'), /* Legacy iOS */
+    url('../Aver\ Bold.ttf') format('eot');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Aver";
+    src: local("Aver\ Bold\ Italic"), /* Find Locally */
+    url('../Aver\ Bold\ Italic.ttf') format('embedded-opentype'), /* Internet Explorer */
+    url('../Aver\ Bold\ Italic.ttf') format('woff2'), /* Super Modern Browsers */
+    url('../Aver\ Bold\ Italic.ttf') format('woff'), /* Pretty Modern Browsers */
+    url('../Aver\ Bold\ Italic.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../Aver\ Bold\ Italic.ttf') format('svg'), /* Legacy iOS */
+    url('../Aver\ Bold\ Italic.ttf') format('eot');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Aver";
+    src: local("Aver\ Italic"), /* Find Locally */
+    url('../Aver\ Italic.ttf') format('embedded-opentype'), /* Internet Explorer */
+    url('../Aver\ Italic.ttf') format('woff2'), /* Super Modern Browsers */
+    url('../Aver\ Italic.ttf') format('woff'), /* Pretty Modern Browsers */
+    url('../Aver\ Italic.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../Aver\ Italic.ttf') format('svg'), /* Legacy iOS */
+    url('../Aver\ Italic.ttf') format('eot');
+    font-style: italic;
+}

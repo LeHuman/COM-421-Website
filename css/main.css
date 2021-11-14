@@ -36,6 +36,8 @@
     --contentWidthMin: 120px;
 }
 
+/* Element Attributes */
+
 a {
     color: inherit;
     text-decoration: inherit;
@@ -47,11 +49,15 @@ html {
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+    font-family: 'IBM Plex Sans', 'Helvetica Neue', -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
     font-size: 0.9em;
     padding: 16px 128px;
     padding-top: 6em;
     overflow-x: hidden;
+}
+
+body p {
+    font-family: Aver;
 }
 
 @media only screen and ( min-width: 700px) {
