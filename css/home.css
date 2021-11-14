@@ -10,11 +10,19 @@ img {
 @media only screen and ( max-width: 1285px) {
     img {
         float: none;
-        margin: 0;
+        margin: 16px 0;
     }
     #content div div {
         text-align: center;
     }
+}
+
+#hello {
+    font-size: 3em;
+}
+
+#intro {
+    font-size: 1.8em;
 }
 
 #headerSpace {

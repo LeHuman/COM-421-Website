@@ -54,6 +54,12 @@ body {
     overflow-x: hidden;
 }
 
+@media only screen and ( min-width: 700px) {
+    body {
+        line-height: 22px;
+    }
+}
+
 code {
     font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
     font-size: 14px;
