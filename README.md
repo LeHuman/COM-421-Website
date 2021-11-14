@@ -1,6 +1,6 @@
 # COM-421-Website
 
-This is a website for my COM 421 class. It uses only HTMLs and CSS.
+This is a website for my COM 421 class. It uses only HTML and CSS.
 
 ## Walkthrough
 
