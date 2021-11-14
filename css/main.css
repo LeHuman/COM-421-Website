@@ -242,18 +242,18 @@ nav ul li a:hover {
     right: 0;
     bottom: 0;
     box-shadow: inset 0 0 2000px var(--tcolor_mc1);
-    filter: blur(2px);
+    filter: blur(3px);
     margin: -5px;
     opacity: 1;
-    transition: 0.3s ease-in-out;
+    transition: 6s ease-in-out;
     transition-property: margin, opacity;
     transition-delay: 0.1s;
 }
 
-body:hover #headerSpace::before {
+html:hover #headerSpace::before {
     margin: 0;
     opacity: 0;
-    transition: .3s ease-in-out;
+    transition: 1s ease-in-out;
     transition-property: margin, opacity;
     transition-delay: 0.1s;
 }
