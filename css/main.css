@@ -33,6 +33,11 @@
     --tcolor_pink: rgb(255, 147, 255, 0.9);
 }
 
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
 html {
     background-color: var(--color_mc1);
     color: var(--color_mc4);
@@ -265,12 +270,4 @@ body:hover #headerSpace::before {
     min-height: 24em;
     max-height: 24em;
     overflow: hidden;
-}
-
-#contact #headerSpace {
-    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b6e2b5b6-1304-4cd2-a7e1-4df01f81c80b/d1dn53z-a9151588-e8cd-4ae5-a0e1-1418e8aca9b0.jpg/v1/fill/w_1024,h_768,q_75,strp/stock_image_17___family_hug_by_vertasual.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sIm9iaiI6W1t7InBhdGgiOiIvZi9iNmUyYjViNi0xMzA0LTRjZDItYTdlMS00ZGYwMWY4MWM4MGIvZDFkbjUzei1hOTE1MTU4OC1lOGNkLTRhZTUtYTBlMS0xNDE4ZThhY2E5YjAuanBnIiwid2lkdGgiOiI8PTEwMjQiLCJoZWlnaHQiOiI8PTc2OCJ9XV19.zR7rQtdPUg8PR1exBy6HPMLxeOUk5eSXZMdVa0dhi2o");
-}
-
-#projects #headerSpace {
-    background-image: url("https://i.stack.imgur.com/FNT9b.gif");
 }

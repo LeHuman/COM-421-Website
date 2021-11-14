@@ -4,6 +4,14 @@
     color: var(--color_mc1);
 }
 
+#downloadHeader {
+    background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, var(--color_mc0) 40%);
+}
+
+#downloadHeader a {
+    color: var(--color_mc4);
+}
+
 #summary h3 {
     background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, var(--color_orange) 40%);
 }
@@ -38,6 +46,24 @@
 
 #experience h4:nth-of-type(3) {
     background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, var(--color_green) 20%);
+}
+
+/* Triggers */
+
+.resumeSection:hover .edgeLeft {
+    padding-left: 50em;
+    margin-left: -50em;
+    transition: .3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition-property: padding-left, margin-left;
+    transition-delay: 0.05s;
+}
+
+.resumeSection:hover .edgeRight {
+    padding-right: 50em;
+    margin-right: -50em;
+    transition: .3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition-property: padding-right, margin-right;
+    transition-delay: 0.05s;
 }
 
 /* Lists */
