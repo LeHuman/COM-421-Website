@@ -1,3 +1,27 @@
+/* Background colors */
+
+h3 {
+    color: var(--color_mc1);
+}
+
+h3:nth-of-type(1) {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, var(--color_green) 30%);
+}
+
+h3:nth-of-type(2) {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, var(--color_yellow) 30%);
+}
+
+/* Paragraphs */
+
+#content p {
+    font-size: 1.2em;
+}
+
+#content p a {
+    text-decoration: underline;
+}
+
 /* Header */
 
 #headerSpace {

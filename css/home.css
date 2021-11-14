@@ -1,8 +1,20 @@
-#content img {
+img {
     margin: 0 32px;
     float: right;
-    max-width: 240px;
+    width: 100%;
+    max-width: 480px;
+    min-width: 25%;
     border-radius: 4px;
+}
+
+@media only screen and ( max-width: 1285px) {
+    img {
+        float: none;
+        margin: 0;
+    }
+    #content div div {
+        text-align: center;
+    }
 }
 
 #headerSpace {
