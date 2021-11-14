@@ -234,6 +234,46 @@ nav ul li a:hover {
     background-color: var(--color_alt2);
 }
 
+/* Header Link */
+
+#headerSpaceOver {
+    position: absolute;
+    /* display: flex; */
+    text-align: right;
+    /* justify-content: center; */
+    margin-top: 20em;
+    height: 4em;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#headerLink {
+    position: absolute;
+    margin-right: 1.5em;
+    margin-bottom: 1.5em;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+    filter: invert(100%);
+    width: 3em;
+    height: 3em;
+    transition: 1s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition-delay: 0.05s;
+    transition-property: width, height, margin-right, margin-bottom;
+}
+
+#headerLink:hover {
+    width: 4em;
+    height: 4em;
+    margin-right: .875em;
+    margin-bottom: .875em;
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-delay: 0.05s;
+    transition-property: width, height, margin-right, margin-bottom;
+}
+
 /* Header Background */
 
 #headerSpace {
