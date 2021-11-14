@@ -79,32 +79,50 @@ h5 {
 ul {
     margin-left: 0.6em;
     list-style: none;
+    padding: 0;
 }
 
 ul li {
     padding: 0.2em 0;
 }
 
-ol {
-    margin-left: 0.6em;
-    display: flex;
-    list-style: none;
-    padding: 0;
+@media only screen and ( max-width: 960px) {
+    ol {
+        margin-left: 0.6em;
+        list-style: none;
+        padding: 0;
+    }
 }
 
-ol li~li::before {
-    content: ', ';
+@media only screen and ( min-width: 960px) {
+    ol {
+        margin-left: 0.6em;
+        display: flex;
+        list-style: none;
+        padding: 0;
+    }
+    ol li~li::before {
+        content: ', ';
+    }
 }
 
 /* Alignment */
 
-.rightAlign {
-    float: right;
+@media only screen and ( max-width: 1200px) {
+    .rightAlign {
+        display: flex;
+    }
 }
 
-.leftAlign {
-    float: left;
+@media only screen and ( min-width: 1200px) {
+    .rightAlign {
+        float: right;
+    }
 }
+
+/* .leftAlign {
+    float: left;
+} */
 
 /* Header */
 
