@@ -10,6 +10,7 @@
 
 #downloadHeader a {
     color: var(--color_mc4);
+    text-decoration: underline;
 }
 
 #summary h3 {
@@ -127,5 +128,5 @@ ul li {
 /* Header */
 
 #headerSpace {
-    background-image: url("https://lh6.ggpht.com/-wtv7FBpPIj4/VP8MMX6l6QI/AAAAAAAArZI/bX0C06L2knA/stock-photos-for-free%25255B4%25255D.jpg?imgmax=800");
+    background-image: url("../img/SAEGarage.png");
 }

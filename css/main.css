@@ -148,7 +148,6 @@ h4.edgeRight {
     margin-top: 8em;
     max-width: 960px;
     min-width: 240px;
-    /* min-width: 50%; */
     font-size: 1.2em;
 }
 
@@ -159,8 +158,6 @@ h4.edgeRight {
     color: var(--color_mc4);
     font-weight: bold;
     background-color: var(--tcolor_red);
-    /* border-color: var(--color_mc0);
-    border-bottom-style: solid; */
     transition: .3s ease-in-out;
     transition-property: background-color;
 }
