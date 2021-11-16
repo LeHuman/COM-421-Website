@@ -9,6 +9,8 @@ This is a website for my COM 421 class. It uses only HTML and CSS.
 It also includes the download link for my resume as a PDF.
 - The final page is my [contact info](https://lehuman.github.io/COM-421-Website/html/contact.html), this is where I added whatever other external links that are relevant to me.
 
+Throughout each page, the header image also includes a link that is relevant to the picture at the bottom right.
+
 ## Future development
 
 Because of the time constraints of this project I did not accomplish everything that I wanted todo. This includes the following.
